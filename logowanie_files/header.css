@@ -1,0 +1,91 @@
+.krz-header {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.krz-header .top-bar-nav {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  padding-right: 1.5rem;
+}
+
+.krz-header .top-bar-nav .top-bar {
+  float: left;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.krz-header .top-bar-nav .top-bar .gov-pl {
+  background-image: url('../../img/herb-polski.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: #1b1b1b;
+  height: 2.8rem;
+  margin: 1.2rem 1.4rem .8rem .7rem;
+  padding: .3rem 0 0 2.9rem;
+  font-size: 1.6rem;
+  display: flex;
+  font-weight: bold;
+  line-height: 1;
+  text-decoration: none;
+  box-shadow: none;
+}
+
+.krz-header .top-bar-nav .top-bar .gov-pl:after {
+  content: "ms.gov.pl";
+  padding: .2rem 0 0 .2rem;
+}
+
+.krz-header .top-bar-nav .top-bar .portal-name {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.7rem;
+  letter-spacing: .4px;
+  font-weight: 600;
+  display: none;
+}
+
+.krz-header .top-bar-nav .top-bar .portal-name::before {
+  content: "";
+  flex: 0 0 2px;
+  height: 63%;
+  background-color: #d5233f;
+  margin-right: 2.1rem;
+}
+
+@media (min-width: 768px) {
+  .krz-header {
+    margin-bottom: 6rem;
+  }
+  .krz-header .top-bar-nav .top-bar {
+    justify-content: flex-start;
+    padding-right: 0;
+  }
+  .krz-header .top-bar-nav .top-bar .gov-pl {
+    background-image: url('../../img/logo-ms.svg');
+    background-position: 2.2rem 1.1rem;
+    background-size: 21.14rem 5.89rem;
+    height: 7.8rem;
+    width: 25.2rem;
+    margin: 0;
+    box-shadow: none;
+  }
+  .krz-header .top-bar-nav .top-bar .gov-pl:after {
+    content: "";
+  }
+  .krz-header .top-bar-nav .top-bar .portal-name {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .krz-header .top-bar-nav .top-bar .gov-pl {
+    background-size: 21rem auto;
+  }
+}

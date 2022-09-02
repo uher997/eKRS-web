@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" class="login-pf">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate, post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zaloguj się do Portal</title>
+    <link rel="icon" href="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/resources/4haso/login/krz/img/favicon.ico" />
+    <link href="logowanie_files/patternfly.min.css" rel="stylesheet" />
+    <link href="logowanie_files/patternfly-additions.min.css" rel="stylesheet" />
+    <link href="logowanie_files/zocial.css" rel="stylesheet" />
+    <link href="logowanie_files/login.css" rel="stylesheet" />
+    <link href="logowanie_files/login-ext.css" rel="stylesheet" />
+    <link href="logowanie_files/header.css" rel="stylesheet" />
+    <link href="logowanie_files/footer.css" rel="stylesheet" />
+    <link href="logowanie_files/theme.css" rel="stylesheet" />
+  </head>
+  <body class="">
+    <div class="krz-header">
+      <div class="top-bar-nav">
+        <div class="top-bar"> <img src="logowanie_files/Screenshot%202022-08-25%20224838.png"
+            alt="" /> <span class="portal-name">Moduł Tożsamość </span> </div>
+      </div>
+    </div>
+    <div class="login-pf-page">
+      <div id="kc-header" class="login-pf-page-header hidden">
+        <div id="kc-header-wrapper" class="">Moduł Tożsamość</div>
+      </div>
+      <div class="card-pf ui-card ui-widget ui-widget-co login-pf-accounts">
+        <header class="login-pf-header">
+          <div id="kc-locale">
+            <div id="kc-locale-wrapper" class="">
+              <div class="kc-dropdown" id="kc-locale-dropdown"> <a href="#" id="kc-current-locale-link">Polski</a>
+                <ul>
+                  <li class="kc-dropdown-item"><a href="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/realms/ms-ext/login-actions/authenticate?client_id=prs-portal&amp;tab_id=hsfIBj7vUbk&amp;execution=1b5cc42f-f5b3-4534-a0d2-06fe8f93fdd6&amp;kc_locale=en">Angielski</a></li>
+                  <li class="kc-dropdown-item"><a href="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/realms/ms-ext/login-actions/authenticate?client_id=prs-portal&amp;tab_id=hsfIBj7vUbk&amp;execution=1b5cc42f-f5b3-4534-a0d2-06fe8f93fdd6&amp;kc_locale=pl">Polski</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <h1 id="kc-page-title"> Logowanie
+          </h1>
+        </header>
+        <div id="kc-content">
+          <div id="kc-content-wrapper">
+            <div id="kc-form" class="row">
+              <div id="kc-form-wrapper" class="col-xs-24 col-md-12 login-pf-social-section">
+                <form id="kc-form-login" onsubmit="login.disabled = true; return true;"
+                  action="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/realms/ms-ext/login-actions/authenticate?session_code=mr77iscepFy56a-w_z0l8URt5MIU8rbwP73UmkFYCgA&amp;execution=1b5cc42f-f5b3-4534-a0d2-06fe8f93fdd6&amp;client_id=prs-portal&amp;tab_id=hsfIBj7vUbk"
+                  method="post">
+                  <div class="form-group"> <label for="username" class="control-label">Nazwa
+                      użytkownika</label><span class="krz-tooltip krz-tooltip-icon krz-tooltip-sm"
+                      data-text="Nazwa użytkownika może się składać z liter, cyfr oraz opcjonalnie znaków kropki, podkreślenia lub myślnika, może też mieć postać adresu e-mail."></span>
+                    <input tabindex="1" id="username" class="form-control ui-widget ui-inputtext ui-state-default ui-corner-all"
+                      name="username" autofocus="" autocomplete="off" type="text" />
+                  </div>
+                  <div class="form-group"> <label for="password" class="control-label">Hasło</label><span
+                      class="krz-tooltip krz-tooltip-icon krz-tooltip-md" data-text="Hasło musi składać się z 12 do 20 znaków, zawierać co najmniej jedną małą i jedną wielką literę, jedną cyfrę oraz jeden ze znaków specjalnych !@#$%^&amp;+=, wymaga zmiany co 90 dni, powtórne użycie hasła dopuszczalne jest po pięciu zmianach."></span>
+                    <input tabindex="2" id="password" class="form-control ui-widget ui-inputtext ui-state-default ui-corner-all"
+                      name="password" autocomplete="off" type="password" /> </div>
+                  <div class="form-group login-pf-settings">
+                    <div id="kc-form-options"> </div>
+                    <div class=""> <span><a tabindex="5" href="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/realms/ms-ext/login-actions/reset-credentials?client_id=prs-portal&amp;tab_id=hsfIBj7vUbk">Nie
+                          pamiętasz hasła?</a></span> </div>
+                  </div>
+                  <div id="kc-form-buttons" class="form-group"> <input id="id-hidden-input"
+                      name="credentialId" type="hidden" /> <input tabindex="4"
+class="ui-widget ui-button ui-button-text-only ui-button-text ui-state-default ui-corner-all #btn ui-button-primary #btn-primary btn-block btn-lg"
+name="login" id="kc-login" value="Zaloguj" type="submit" />
+          </div>
+        </form>
+    </div>
+        <div id="kc-social-providers" class="col-xs-24 col-md-12 login-pf-social-section">
+          <div class="krz-content-wrapper">
+            <ul class="login-pf-social list-unstyled login-pf-social-all ">
+                <li class="login-pf-social-link"><br /></li></ul><ul class="login-pf-social list-unstyled login-pf-social-all ">
+                </ul><a href="e-formularz.html"><img src="logowanie_files/loginy.png"
+alt="" style="width: 285px; height: 183px;" /></a><ul class="login-pf-social list-unstyled login-pf-social-all "><li
+class="login-pf-social-link"><br /></li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+
+
+        <div id="kc-info" class="login-pf-signup">
+          <div id="kc-info-wrapper" class="">
+      <div id="kc-registration">
+        <div>
+          <span>Nie masz konta?</span><span><a tabindex="6" href="https://sso-toz-kont-prod.apps.ocp.prod.ms.gov.pl/auth/realms/ms-ext/login-actions/registration?client_id=prs-portal&amp;tab_id=hsfIBj7vUbk">Rejestracja</a></span>
+        </div>
+        <div class="clearfix"></div><div class="separator"></div>
+        <div class="small">
+          <span>Potrzebujesz pomocy?</span><span><a tabindex="7" href="https://krz-info-prod.apps.ocp.prod.ms.gov.pl/krz-help/MT_Podr%C4%99cznik_u%C5%BCytkownika_zarejestrowanego_v1.02_2022.06.13.pdf"
+target="_blank">Instrukcja obsługi</a></span>
+        </div>
+        <div class="small">
+          <span>Znalazłeś błąd?</span><span><a tabindex="8" href="https://zgloszenie-gui-inne-prod.apps.ocp.prod.ms.gov.pl/#%21/zglos-blad?wersjaPortalu=1.4.22&amp;nazwaPortalu=MT"
+target="_blank">Zgłoszenie</a></span>
+        </div>
+      </div>
+
+          </div>
+        </div>
+    </div>
+    </div>
+
+  </div>
+  </div>
+
+  <div class="krz-footer">
+  <div class="bottom-bar-nav">
+    <div class="bottom-bar">
+      <div class="portal-info">
+        <div>
+          <div>Portal nadzorowany jest przez Ministerstwo Sprawiedliwości.</div>
+          <div>Projekt współfinansowany przez Unię Europejską ze środków
+ Europejskiego Funduszu Społecznego Program Operacyjny Wiedza Edukacja 
+Rozwój.</div>
+        </div>
+      </div>
+      <div class="fe-wer"></div>
+      <div class="eu-efs"></div>
+    </div>
+  </div>
+  </div>
+</body></html>

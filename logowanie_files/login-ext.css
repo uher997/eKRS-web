@@ -1,0 +1,525 @@
+/* open-sans-300 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/lato-light.woff2") format("woff2"),
+       url("../fonts/lato-light.woff") format("woff");
+}
+/* open-sans-regular - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato-normal.woff2") format("woff2"),
+       url("../fonts/lato-normal.woff") format("woff");
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/lato-semibold.woff2") format("woff2"),
+       url("../fonts/lato-semibold.woff") format("woff");
+}
+/* open-sans-700 - latin */
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/lato-bold.woff2") format("woff2"),
+       url("../fonts/lato-bold.woff") format("woff");
+}
+
+.login-pf, .login-pf body {
+  background: none;
+  background-image: unset !important;
+  background-color: #f5f5f5 !important;
+}
+
+.login-pf a {
+  border-radius: 2px;
+  padding: .3rem .2rem .2rem;
+  margin: -.3rem -.2rem -.2rem
+}
+
+.login-pf a:focus {
+  box-shadow: 0 0 0 2px #E6AC00;
+  outline: none;
+}
+
+.login-pf-page .login-pf-accounts .login-pf-header,
+.login-pf-page .login-pf-accounts .login-pf-signup {
+  flex-basis: auto;
+  width: 100%;
+}
+
+.login-pf-page .login-pf-header {
+  display: block;
+  margin-bottom: 0;
+}
+
+#kc-header {
+  color: #656565;
+}
+
+#kc-header-wrapper {
+  text-transform: none;
+  font-size: 3rem;
+}
+
+#kc-page-title {
+  padding: 1.6rem 1rem .4rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  clear: both;
+}
+
+#kc-locale {
+  float: right;
+}
+
+#kc-registration {
+  font-size: 1.4rem;
+}
+
+a#kc-current-locale-link {
+  padding: .2rem .4rem 0;
+  margin: -.2rem -.4rem 0;
+  line-height: 1.3;
+  text-decoration: none;
+}
+
+a#kc-current-locale-link::after {
+  padding-top: .3rem;
+  float: right;
+}
+
+#kc-form-buttons {
+  margin-bottom: 1.5rem;
+}
+
+.login-pf-settings ~#kc-form-buttons {
+  margin-top: 2.6rem;
+}
+
+.login-pf-settings a {
+  white-space: nowrap;
+}
+
+.login-pf-page .form-control {
+  height: 3.2rem;
+  box-shadow: none;
+}
+
+.login-pf-page .control-label {
+  margin-bottom: .3em;
+  font-weight: 500;
+}
+
+.login-pf-page .ui-button {
+  min-height: 3.2rem;
+  padding: 0 1.4rem !important;
+}
+
+.login-pf-page .form-control#firstName {
+  pointer-events: none;
+  background-color: #f8f8f8;
+}
+
+.login-pf-page .form-control#lastName {
+  pointer-events: none;
+  background-color: #f8f8f8;
+}
+
+.login-pf-page .login-pf-signup {
+  color: #656565;
+  margin: 0;
+}
+
+.login-pf-page .login-pf-signup:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.login-pf-page .login-pf-signup a {
+  padding: .1rem; /* IE11 */
+  padding: min(1rem, .3rem);
+  margin: -.1rem; /* IE11 */
+  margin: min(0, -.3rem);
+  margin-left: .6rem;
+}
+
+.login-pf-page .login-pf-social-link a {
+  color: #656565;
+  margin: 0;
+}
+
+.form-horizontal .form-group {
+  margin-right: -1.5rem;
+  margin-left: -1.5rem;
+}
+
+.card-pf {
+  max-width: 54rem;
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%),
+              0 0 1px 0 rgb(0 0 0 / 14%),
+              0 0 1px -1px rgb(0 0 0 / 12%) !important;
+}
+
+.card-pf .alert {
+  padding-top: 1.3rem;
+  padding-bottom: .9rem;
+  border-width: 2px;
+  border-radius: 2px;
+}
+
+.card-pf .alert.alert-error {
+  border-color: #d11632;
+  color: #d11632;
+  background-color: #fffbfb;
+}
+
+.card-pf .alert > .pficon {
+  top: 1.1rem;
+}
+
+.card-pf .alert.alert-error > .pficon:before {
+  color: #d11632;
+}
+
+@media (min-width: 768px) {
+  .login-pf-page .login-pf-signup {
+    margin: 3.5rem 0 0;
+  }
+  .login-pf-page .login-pf-header {
+    margin-bottom: 1.6rem;
+  }
+  .login-pf-page .login-pf-header #kc-page-title {
+    padding-top: .6rem;
+  }
+  .login-pf-page .card-pf {
+    padding: 1.5rem 3rem 2rem;
+  }
+  .login-pf-page .login-pf-social-section:last-of-type {
+    border-left: 1px solid #e7e7e7;
+  }
+  .form-horizontal .control-label {
+    margin-bottom: .3rem;
+  }
+}
+
+#kc-social-providers .zocial, #kc-social-providers a.zocial {
+  font-family: "Lato";
+}
+
+#kc-social-providers #zocial-s24-identity span {
+  background: url("../img/login-s24.svg") no-repeat center !important;
+  background-size: 8rem auto !important; /* IE11 */
+  background-size: min(94%, 8rem) auto !important;
+}
+
+#kc-social-providers #zocial-ucpe-identity span {
+  background: url("../img/login-ucpe.svg") no-repeat center !important;
+  background-size: 4.7rem auto !important; /* IE11 */
+  background-size: min(94%, 4.7rem) auto !important;
+}
+
+#kc-social-providers #zocial-wk-identity span,
+#kc-social-providers #zocial-wk-identity-int span,
+#kc-social-providers #zocial-wk-identity-int2 span,
+#kc-social-providers #zocial-wk-identity-sym span {
+  background: url("../img/login-wk.png") no-repeat center !important;
+  background-size: 12rem auto !important;
+}
+
+#kc-social-providers #zocial-s24-identity::after {
+  content: "Logowanie poprzez S24";
+}
+
+#kc-social-providers #zocial-ucpe-identity::after {
+  content: "Kwalifikowany podpis elektroniczny";
+}
+
+#kc-social-providers #zocial-wk-identity::after {
+  content: "Krajowy Węzeł Identyfikacji Elektronicznej";
+}
+
+#kc-social-providers #zocial-wk-identity-int::after {
+  content: "Krajowy Węzeł Identyfikacji Elektronicznej\A(środowisko integracyjne)";
+}
+
+#kc-social-providers #zocial-wk-identity-sym::after {
+  content: "Krajowy Węzeł Identyfikacji Elektronicznej\A(środowisko symulatora)";
+}
+
+#kc-social-providers .zocial span {
+  min-height: 5.4rem;
+  color: transparent;
+  display: block;
+}
+
+#kc-social-providers .zocial {
+  background-color: transparent;
+  min-height: 9.8rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  padding: .8rem .8rem 1.2rem;
+}
+
+#kc-social-providers .zocial::after {
+  line-height: 2.2rem;
+  font-weight: 500;
+  letter-spacing: .1px;
+}
+
+#kc-social-providers .zocial:hover {
+  background-color: #f5faff !important;
+  border-color: #005ebd !important;
+  color: #005ebd;
+  transition: all .3s;
+}
+
+#kc-social-providers .zocial:focus {
+  box-shadow: 0 0 0 2px #e6ac00;
+  border-color: transparent;
+  outline: 0 none;
+  outline-offset: 0;
+}
+
+#kc-social-providers .zocial:active {
+  border-color: transparent !important;
+}
+
+.context-button-container {
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.context-button-container .krz {
+  position: absolute;
+  left: 1.4rem;
+  top: calc(50% - 1.5rem);
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 2px;
+  transition: background-color .3s;
+  pointer-events: none;
+}
+
+.context-button-container .krz.krz-default.krz-user {
+  background: url("../img/icon-user-g.svg") no-repeat center;
+  background-size: 2.4rem 2.4rem;
+}
+
+.context-button-container .krz.krz-primary.krz-user {
+  background: url("../img/icon-user-b.svg") no-repeat center;
+  background-size: 2.4rem 2.4rem;
+}
+
+.context-button-container .krz.krz-default.krz-case {
+  background: url("../img/icon-case-g.svg") no-repeat center;
+  background-size: 2.4rem 2.4rem;
+}
+
+.context-button-container .krz.krz-primary.krz-case {
+  background: url("../img/icon-case-b.svg") no-repeat center;
+  background-size: 2.4rem 2.4rem;
+}
+
+.context-button-container .krz.krz-primary {
+  background-color: #f8fcff !important;
+  border-color: #408ccf;
+}
+
+.context-button-container:hover .krz.krz-primary {
+  background-color: white !important;
+}
+
+.context-button-container .krz.krz-default {
+  background-color: #F8FDFA !important;
+  border-color: #599c4f;
+}
+
+.context-button-container:hover .krz.krz-default {
+  background-color: white !important;
+}
+
+.context-button-container .ui-button {
+  background-color: white !important;
+  color: #656565 !important;
+  white-space: normal;
+  width: 100%;
+  min-height: 4.8rem;
+  padding: 1.3rem 1.4rem 1.1rem 5.8rem !important;
+  border: 1px #e0e0e0 solid;
+  border-radius: 2px;
+  position: static;
+  text-align: left;
+  height: auto;
+}
+
+.context-button-container .ui-button:hover {
+  background-color: #f5faff !important;
+  color: #005ebd !important;
+  transition: all .3s;
+}
+
+.context-button-container .ui-button:focus {
+  border-color: transparent;
+}
+
+.context-button-container .ui-button:active {
+  border-color: transparent !important;
+}
+
+.krz-content-wrapper {
+  overflow-y: auto;
+  padding: .2rem 1rem .2rem .2rem;
+  margin-right: -1rem;
+}
+
+.krz-content-wrapper::-webkit-scrollbar {
+  width: .4rem;
+}
+
+.krz-content-wrapper::-webkit-scrollbar-track {
+  background-color: #f2f2f2;
+  border-radius: 2px;
+}
+
+.krz-content-wrapper::-webkit-scrollbar-thumb {
+  background-color: #7ca3ca;
+  border-radius: 2px;
+}
+
+.krz-content-wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: #0052a5;
+}
+
+.krz-content-wrapper {
+  scrollbar-width: thin;
+  /* IE - kolory paska przewijania */
+  scrollbar-face-color: #7ca3ca;
+  scrollbar-track-color: #f2f2f2;
+  scrollbar-arrow-color: #0052a5;
+  scrollbar-shadow-color: #0052a5;
+}
+
+#kc-content-wrapper .krz-content-wrapper {
+  max-height: 39.9rem;
+}
+
+#kc-social-providers .krz-content-wrapper {
+  max-height: 24rem;
+}
+
+#kc-registration div span:first-of-type {
+  min-width: 50%;
+  float: left;
+  text-align: right;
+}
+
+#kc-registration div span:last-of-type {
+  min-width: 50%;
+  float: right;
+  text-align: left;
+}
+
+#kc-registration div.separator {
+  border-top: 1px dotted #e0e0e0;
+  width: 34%;
+  text-align: center;
+  margin: .4rem 0 .6rem 32%;
+}
+
+#kc-registration div.small {
+  font-size: 1.2rem;
+}
+
+/* Dymki z tekstami podpowiedzi */
+
+.krz-tooltip {
+  position: relative;
+}
+
+.krz-tooltip:before { /* Treść podpowiedzi */
+  content: attr(data-text);
+  position: absolute;
+
+  top: 50%;
+  transform:translateY(-50%);
+  left: 100%;
+  margin-left: 1.5rem;
+
+  min-width: 18rem;
+  padding: .8rem;
+  border-radius: .2rem;
+  background: #0052a5;
+  color: white;
+  text-align: center;
+  font-size: 1.2rem;
+
+  opacity: 0;
+  z-index: -1;
+}
+
+.krz-tooltip-xs:before {
+  min-width: 10rem;
+}
+
+.krz-tooltip-sm:before {
+  min-width: 21.2rem;
+}
+
+.krz-tooltip-md:before {
+  min-width: 30rem;
+}
+
+.krz-tooltip-lg:before {
+  min-width: 40rem;
+}
+
+.krz-tooltip:after { /* Strzałka (dzióbek) */
+  content: "";
+  position: absolute;
+
+  top: 50%;
+  transform:translateY(-50%);
+  left: 100%;
+  margin-left: .1rem;
+
+  border: .7rem solid #0052a5;
+  border-color: transparent #0052a5 transparent transparent;
+
+  opacity: 0;
+  z-index: -1;
+}
+
+.krz-tooltip:hover:before, .krz-tooltip:hover:after {
+  opacity: 1;
+  z-index: 99999;
+  transition: .3s linear .6s;
+}
+
+.krz-tooltip-icon { /* Ikona podpowiedzi */
+  background: url("../img/icon-info-circle.svg") no-repeat center !important;
+  background-size: 2.1rem auto !important;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin: 0 0 -.3rem .6rem;
+  display: inline-block;
+}
+
+.krz-certification-code {
+  border: 1px solid #408ccf;
+  background-color: #f8fcff;
+  color: #307cbf;
+  border-radius: 2px;
+  padding: .2rem 1rem;
+  font-size: 1.6rem;
+  margin: 0;
+  text-align: center;
+}

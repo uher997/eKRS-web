@@ -1,0 +1,58 @@
+.krz-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid #E0E0E0;
+}
+
+.krz-footer .bottom-bar-nav {
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+}
+
+.krz-footer .bottom-bar-nav .bottom-bar {
+  float: left;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  padding: .5rem;
+}
+
+.krz-footer .bottom-bar-nav .bottom-bar .fe-wer {
+  background-image: url('../../img/fe-pc-left-pl.svg');
+  background-repeat: no-repeat;
+  width: 80px;
+  margin: 0 1.7rem;
+}
+
+.krz-footer .bottom-bar-nav .bottom-bar .eu-efs {
+  background-image: url('../../img/eu-efrp-right-pl.svg');
+  background-repeat: no-repeat;
+  width: 149px;
+  margin: 0 1.7rem;
+}
+
+.krz-footer .bottom-bar-nav .bottom-bar .portal-info {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: .1px;
+  padding-right: 3rem;
+  color: #444;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .krz-footer .bottom-bar-nav .bottom-bar .portal-info {
+    display: flex;
+  }
+}
