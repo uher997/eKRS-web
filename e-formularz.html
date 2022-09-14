@@ -188,9 +188,156 @@
   </style>
   <style>
     /* #WACContainer.WACContainer .WAC__bot-bar{
-    margin-left: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;} */
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__Text {
+  opacity: 0;
+  margin: 16px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: 0;
+  -webkit-line-clamp: 10 !important;
+}
+
+  #WACContainer.WACContainer .WACHeader__LeftButtons {
+  justify-content: flex-start;
+  padding-left: 16px;
+  background-image: url(images/logoekrs\ 1.svg);
+  background-repeat: no-repeat;
+  background-position-x: 16px;
+  background-position-y: 16px;
+}
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__Text, #WACContainer.WACContainer .WACLauncherMedium__Container .WACLauncherMedium__Text {
+  color: var(--WatsonAssistantChat-ACCENT-color-text);
+  font-size: 16px;
+  line-height: var(--WatsonAssistantChat-BASE-line-height-med);
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  text-align: left;
+  margin-bottom: 16px;
+  word-break: break-word;
+  word-wrap: break-word;
+  visibility: visible;
+  margin-top: 10px;
+  padding-top: 135px;
+  }
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__Text {
+  opacity: 0;
+  margin: 13px;
+  font-size: 16px !important;
+  line-height: 1.4;
+  letter-spacing: 0;
+  -webkit-line-clamp: 10;
+  height: 260px;
+  width: 250px !important;
+}
+
+
+#WACContainer.WACContainer .WACLauncherComplex__ContentButton div::before {
+  content: "Witam! Jestem Wirtualnym asystentem eKRS.\a" !important;
+  line-height: 21px;
+  font-size: 16px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  white-space: pre-line;
+  display: flex !important;
+  height: 48px;
+}
+#WACContainer.WACContainer .WACLauncherComplex__ContentButton div::after {
+  content: "Pomogę Ci w złożeniu wniosków i odpowiem na Twoje pytania." !important;
+  line-height: 21px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  /* font-weight: bold; */
+  white-space: pre-line;
+  padding-top: 144px;
+  padding-right: 20px;
+  height: 225px;
+  width: 235px;
+}
+  #WACContainer.WACContainer .WACLauncherComplex__Container--introAnimation {
+  -webkit-animation: var(--WatsonAssistantChat-CARBON-duration--moderate-02) WACAnimLauncherComplex__FadeInSlideUp forwards;
+  animation: var(--WatsonAssistantChat-CARBON-duration--moderate-02) WACAnimLauncherComplex__FadeInSlideUp forwards;
+}
+
+  #WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__ContentButton {
+  cursor: pointer;
+  background: var(--WatsonAssistantChat-CARBON-hover-primary);
+  background-image: url(images/Frame\ 7.svg) !important;
+  background-repeat: no-repeat !important;
+  width: 265px;
+  height: 273px;
+  background-repeat: no-repeat;
+}
+
+#WACContainer.WACContainer .WACLauncherComplex__Container .WACLauncherComplex__ContentButton {
+  background: transparent;
+    background-repeat: repeat;
+    background-image: none;
+  padding: 0;
+  border: var(--WatsonAssistantChat-BASE-border-width-large) solid transparent;
+  border-radius: 12px;
+  box-shadow: none;
+  min-width: 160px;
+  background-image: url(images/Frame\ 7.svg) !important;
+  background-repeat: no-repeat !important;
+  width: 273px;
+  height: 265px;
+  background-repeat: no-repeat;
+}
+
+  #WACContainer.WACContainer .WAC__message .WAC__message-vertical-padding{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+
+
+  #WACContainer.WACContainer .WAC__bot-bar {
+  flex-basis: 24px;
+  min-width: 24px;
+  width: 30px;
+  height: 30px;
+}
+
+
+  #WACContainer.WACContainer .WAC__bot-bar{
+    /* margin-left: 100px; */
+    /* margin-right: auto; */
+    background-color: transparent;
+    border-radius: 100%;
+    background-image: url(images/bot1_Obszar\ roboczy\ 1\ 1.svg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    /*background-image: url(https://www.nicepng.com/png/detail/89-891356_ibm-watson-avatar-ibm-watson-icon.png)!important;*/
+    /* flex: initial; */
+    /* background-size: contain; */
+  }
+
+  #WACContainer.WACContainer .WAC__received--text{
+    margin-top:15px;
+  }
+  .center {
+    display: block;
+    margin-left: 50px;
     margin-right: auto;
-    width: 100%;} */
+    width: 50%;
+}
+
+#WACContainer.WACContainer .WAC__bot-bar-color {
+  width: var(--WatsonAssistantChat-MESSAGE-bar-width);
+  border-radius: var(--WatsonAssistantChat-BASE-border-radius-xsmall);
+  background-color: #0f62fe00 !important;
+  margin-left: calc(16px - var(--WatsonAssistantChat-MESSAGE-bar-width));
+  height: 0px;
+}
 
     #WACContainer.WACContainer .CardButton {
       display: block;
@@ -242,20 +389,23 @@
       bottom: 32px;
       right: 32px;
       z-index: 9999;
-      border: 10px solid #0052a5;
+      border: 10px solid #054897;
       padding: 1em;
-      border-radius: 8px;
+      padding-top: 200px;
+      border-radius: 17px;
       margin: 0;
       text-decoration: none;
-      background-color: #ffffff;
-      color: #454545;
+      background-color: #054897;
+      background-image: url(https://raw.githubusercontent.com/uher997/eKRS-web/main/images/man1.png);
+      background-repeat: no-repeat;
+      color: #ffffff;
       font-family: sans-serif;
-      font-size: 1.3rem;
+      font-size: 16px;
       cursor: pointer;
       text-align: left;
       -webkit-appearance: none;
       -moz-appearance: none;
-      width: 290px;
+    width: 290px;  
       opacity: 0;
     }
 
@@ -266,15 +416,22 @@
 
     button.chatLauncher:hover,
     button.chatLauncher:focus {
-      background-color: rgb(225, 225, 254);
-      border: 4px solid #0053ba;
+      background-color: #054897;
+      border: 1px solid #054897;
     }
 
     button.chatLauncher:focus {
-      outline: 1px solid #0053ba;
-      outline-offset: -4px;
+      outline: 1px solid #054897;
+      outline-offset: -1px;
     }
   </style>
+  <style>
+    a{color: black;}
+    a:link {text-decoration: none}
+    a:visited {text-decoration: none}
+    a:active {text-decoration: none}
+    a:hover {text-decoration: underline}
+</style>
   <link rel="stylesheet" href="e-formularz_files/styles.4297efb2bdb35b1ed721.css">
   <style>
     @keyframes ds-spinner {
@@ -2699,18 +2856,22 @@
      * This will convert responses that contain buttons into custom responses so we can render them using custom code.
      */
     function preReceiveHandler(event) {
-
-      console.log('from preReceiveHandler')
-      console.log(event)
-
       const message = event.data;
 
       if (message.output.generic) {
         message.output.generic.forEach(messageItem => {
+          console.log(messageItem)
           // Message items that contain buttons have a response type of "option".
           if (messageItem.response_type === 'option') {
+            webChatInstance.updateAssistantInputFieldVisibility(false)
+            if (messageItem.options[0].label === 'Przejdź do następnego kroku') {
+              webChatInstance.updateAssistantInputFieldVisibility(true)
+            }
             // This will turn this response into a custom response that will be rendered by our custom response handler.
             messageItem.response_type = 'user_defined';
+          }
+          else {
+            webChatInstance.updateAssistantInputFieldVisibility(true)
           }
         })
       }
@@ -2780,12 +2941,13 @@
      */
 
     // <script>
-    const element = document.querySelector('.chatElement');
+    // const element = document.querySelector('.chatElement');
     window.watsonAssistantChatOptions = {
       integrationID: "295a5ae3-aee3-437d-be5b-7b952cf2cc80", // The ID of this integration.
       region: "eu-gb", // The region your integration is hosted in.
       serviceInstanceID: "feed6012-1e65-4a91-a937-2e2852b6b622", // The ID of your service instance.
-      showLauncher: false,
+      showLauncher: true,
+      showCloseAndRestartButton: true,
 
       // Provide the custom element.
       // element: element,
@@ -2799,13 +2961,27 @@
         webChatInstance = instance;
         // https://github.com/watson-developer-cloud/assistant-web-chat/blob/main/languages/en.json
         const customLanguagePack = {
-          "input_placeholder": "Napisz wiadomość..."
+          "input_placeholder": "Napisz wiadomość...",
+          "launcher_closeButton": "Zamknij",
+          "launcher_desktopGreeting": "",
+          "closeAndRestartModal_title": "Zakończ rozmowę",
+          "closeAndRestartModal_message": "Czy chcesz zakończyć rozmowę z Wirtualnym asystentem?",
+          "closeAndRestartModal_confirm": "Tak",
+          "closeAndRestartModal_cancel": "Nie",
         };
         instance.updateLanguagePack(customLanguagePack);
         instance.updateCSSVariables({
           'SECONDARY-color': '#0052a5',
           '$interactive-03': '#0052a5',
-          '$interactive-04': '#0052a5'
+          '$interactive-04': '#0052a5',
+          'ACCENT-color': '#054897',
+          'CARBON-interactive-01': '#054897',
+          'CARBON-hover-primary': '#054897',
+          'CARBON-ui-background': '#fff',
+          'CARBON-ui-01': '#F3F9FF',
+          'BRANDING-background': '#F3F9FF',
+          'CARBON-text-03': '#222'
+      
         });
         // Select the button element from the page.
         const button = document.querySelector('.chatLauncher');
@@ -2813,9 +2989,9 @@
         // customPanel.hostElement.innerHTML = '<div class="content-class">My awesome content!</div>';
 
         // Add the event listener to open your web chat.
-        button.addEventListener('click', function clickListener() {
-          instance.openWindow();
-        });
+        // button.addEventListener('click', function clickListener() {
+        //   instance.openWindow();
+        // });
 
 
         // const sendObject = {
@@ -2899,7 +3075,7 @@
 
         // Make sure that we disable the buttons each time the user sends a message.
         instance.on({ type: 'pre:send', handler: preSendHandler });
-
+        instance.showLauncherGreetingMessage(1000)
         // instance.on({ type: "history:begin", handler: historyHandler });
         // instance.on({ type: "history:end", handler: historyHandler });
         // instance.recive(event);
@@ -2908,8 +3084,8 @@
         instance.render().then(function () {
           // Now that web chat has been rendered (but is still closed), we make the
           // custom launcher button visible.
-          button.style.display = 'block';
-          button.classList.add('open');
+          // button.style.display = 'block';
+          // button.classList.add('open');
         });
       }
     };
